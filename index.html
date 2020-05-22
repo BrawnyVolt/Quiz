@@ -1,42 +1,114 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.5.0.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
-  <body>
-    <form id="quiz">
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.0.js">
+  </script>
+  <script src="js/scripts.js">
+  </script>
+  <title></title>
+</head>
+<body>
+  <form id="quiz" name="quiz">
+    <div class="custom-control custom-radio">
       <p class="lead">What is in your fridge right now?</p>
-      <input type="radio" name="question1" value="1">A lot of food<br>
-      <input type="radio" name="question1" value="2">A little food<br>
-      <input type="radio" name="question1" value="3">Mostly drink<br><br>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question1input1" name="question1" type="radio" value="1"> <label class="custom-control-label" for="question1input1">A lot of food</label><br>
+      </div>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question1input2" name="question1" type="radio" value="2"> <label class="custom-control-label" for="question1input2">A little food</label><br>
+      </div>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question1input3" name="question1" type="radio" value="3"> <label class="custom-control-label" for="question1input3">Mostly drink</label><br>
+        <br>
+      </div>
       <p class="lead">When scrolling through social media, do you prefer posts from celebrities or from your best friends?</p>
-      <input type="radio" name="question2" value="1">Celebs<br>
-      <input type="radio" name="question2" value="2">Friends<br>
-      <input type="radio" name="question2" value="3">A mix of both<br><br>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question2input1" name="question2" type="radio" value="1">
+        <label class="custom-control-label" for="question2input1">Celebs</label><br>
+      </div>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question2input2" name="question2" type="radio" value="2">
+        <label class="custom-control-label" for="question2input2">Friends</label><br>
+      </div>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question2input3" name="question2" type="radio" value="3">
+        <label class="custom-control-label" for="question2input3">A mix of both</label><br>
+        <br>
+      </div>
       <p class="lead">When do you have the most energy?</p>
-      <input type="radio" name="question3" value="1">Morning<br>
-      <input type="radio" name="question3" value="2">Noon<br>
-      <input type="radio" name="question3" value="3">Night<br><br>
-      <p class="lead">How far away from your home town do yo want to live?</p>
-      <input type="radio" name="question4" value="1">10 miles<br>
-      <input type="radio" name="question4" value="2">100 miles<br>
-      <input type="radio" name="question4" value="3">1000+ miles<br><br>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question3input1" name="question3" type="radio" value="1">
+        <label class="custom-control-label" for="question3input1">Morning</label><br>
+      </div>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question3input2" name="question3" type="radio" value="2">
+        <label class="custom-control-label" for="question3input2">Noon</label><br>
+      </div>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question3input3" name="question3" type="radio" value="3">
+        <label class="custom-control-label" for="question3input3">Night</label><br>
+        <br>
+      </div>
+      <p class="lead">How far away from your home town do you want to live?</p>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question4input1" name="question4" type="radio" value="1">
+        <label class="custom-control-label" for="question4input1">10 miles</label><br>
+      </div>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question4input2" name="question4" type="radio" value="2">
+        <label class="custom-control-label" for="question4input2">100 miles</label><br>
+      </div>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question4input3" name="question4" type="radio" value="3">
+        <label class="custom-control-label" for="question4input3">1000+ miles</label><br>
+        <br>
+      </div>
       <p class="lead">According to the sound they make, whats your favorite size of dog?</p>
-      <input type="radio" name="question5" value="1">Yipp<br>
-      <input type="radio" name="question5" value="2">Bark<br>
-      <input type="radio" name="question5" value="3">Boof<br><br>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question5input1" name="question5" type="radio" value="1">
+        <label class="custom-control-label" for="question5input1">Yipp</label><br>
+      </div>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question5input2" name="question5" type="radio" value="2">
+        <label class="custom-control-label" for="question5input2">Bark</label><br>
+      </div>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question5input3" name="question5" type="radio" value="3">
+        <label class="custom-control-label" for="question5input3">Boof</label><br>
+        <br>
+      </div>
       <p class="lead">Whats your most comfortable furniture?</p>
-      <input type="radio" name="question6" value="1">Chair<br>
-      <input type="radio" name="question6" value="2">Couch<br>
-      <input type="radio" name="question6" value="3">Bed<br><br>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question6input1" name="question6" type="radio" value="1">
+        <label class="custom-control-label" for="question6input1">Chair</label><br>
+      </div>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question6input2" name="question6" type="radio" value="2">
+        <label class="custom-control-label" for="question6input2">Couch</label><br>
+      </div>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question6input3" name="question6" type="radio" value="3">
+        <label class="custom-control-label" for="question6input3">Bed</label><br>
+        <br>
+      </div>
       <p class="lead">What are you most likely to eat after a stressful day?</p>
-      <input type="radio" name="question7" value="1">A healthy snack<br>
-      <input type="radio" name="question7" value="2">Something sweet<br>
-      <input type="radio" name="question7" value="3">Who do you think you are, don't judge me, I've had a hard day and I deserve to treat myself<br><br>
-      <p><input type="submit" value="Submit"></p>
-    </form>
-          
-          </body>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question7input1" name="question7" type="radio" value="1">
+        <label class="custom-control-label" for="question7input1">A healthy snack</label><br>
+      </div>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question7input2" name="question7" type="radio" value="2">
+        <label class="custom-control-label" for="question7input2">Something sweet</label><br>
+      </div>
+      <div class="custom-control custom-radio">
+        <input class="custom-control-input" id="question7input3" name="question7" type="radio" value="3">
+        <label class="custom-control-label" for="question7input3">Who do you think you are, don't judge me, I've had a hard day and I deserve to treat myself</label><br>
+        <br>
+        <p><input class="btn btn-primary" type="submit" value="Submit"></p>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
